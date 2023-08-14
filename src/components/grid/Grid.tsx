@@ -1,9 +1,8 @@
 import axios from "axios";
 import style from "../../css/Components.module.css";
-import Card, { cardData } from "../card/Card";
+import Card from "../card/Card";
 import { useQuery } from "react-query";
 import { useParams } from "react-router-dom";
-import { useEffect } from "react";
 
 interface jsonData {
     "id": number;

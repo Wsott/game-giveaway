@@ -1,6 +1,4 @@
-import { useQuery } from "react-query";
 import style from "../../css/Components.module.css";
-import axios from "axios";
 
 const mockData = {
     "id": 1155,
