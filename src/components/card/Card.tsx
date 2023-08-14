@@ -26,6 +26,9 @@ export default function Card() {
             </div>
             <div className={style.cardBodyContainer}>
                 <b>{mockData.title}</b>
+                <p><b>Value:</b> <span className={style.crossedText}>{mockData.worth}</span></p>
+                <p><b>End date:</b> {mockData.end_date.split(" ")[0]}</p>
+                <p><i>{mockData.platforms}</i></p>
             </div>
         </div>
     );

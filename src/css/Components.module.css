@@ -1,16 +1,16 @@
 /* Card */
 .cardContainer {
-    background-color: purple;
+    background-color: var(--colorB);
+    /* background-color: purple; */
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    padding: 1rem;
     width: 20vw;
 }
 
-.cardImageContainer {
+/* .cardImageContainer {
     width: 100%;
-}
+} */
 
 .cardImage {
     width: 100%;
@@ -20,15 +20,21 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    padding: 1rem;
 }
 
 /* Grid */
 .gridContainer {
-    background-color: brown;
+    background-color: var(--colorA);
+    /* background-color: brown; */
     width: 90% max-content;
     padding: 1rem;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
     column-gap: 1rem;
     row-gap: 1rem;
+}
+
+.crossedText {
+    text-decoration: line-through;
 }
