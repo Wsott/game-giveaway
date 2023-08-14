@@ -4,7 +4,7 @@ import style from "../../css/Components.module.css";
 export default function NavBar () {
     return (
         <div className={style.navbarContainer}>
-            <p>Inicio</p>
+            <Link to={"/"}>Inicio</Link>
             <Link to={"/giveaway/pc"}>PC</Link>
             <Link to={"/giveaway/steam"}>Steam</Link>
             <Link to={"/giveaway/epic-games-store"}>Epic Games</Link>

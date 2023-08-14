@@ -102,6 +102,21 @@
     color: white;
 }
 
+/* Landing */
+.landingContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--colorB);
+    border-radius: 10px;
+    justify-content: center;
+    margin: 5rem;
+    height: 47vh;
+    font-size: xx-large;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+}
+
 /* HTML elements */
 p {
     margin: 0;
