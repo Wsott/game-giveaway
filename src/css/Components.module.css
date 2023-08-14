@@ -37,6 +37,89 @@
     .menuItems.open {
         transform: translateY(3rem);
     }
+
+    /* Grid */
+    .gridContainer {
+        background-color: var(--colorA);
+        width: 90% max-content;
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 1rem;
+        row-gap: 1rem;
+        margin: 1rem;
+        max-height: 70vh;
+        min-height: 60vh;
+        overflow-y: scroll;
+    }
+
+    /* Card */
+    .cardContainer {
+        background-color: var(--colorC);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        transition: box-shadow 0.2s ease-in-out;
+        color: white;
+    }
+
+    .cardContainer:hover {
+        box-shadow: 0 0 15px white;
+        animation: shake 1.5s infinite;
+    }
+
+    @keyframes shake {
+
+        0%,
+        100% {
+            transform: rotate(0deg);
+        }
+
+        25% {
+            transform: rotate(-1.5deg);
+        }
+
+        50% {
+            transform: rotate(1.5deg);
+        }
+
+        75% {
+            transform: rotate(-1.5deg);
+        }
+    }
+
+    .cardImage {
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .cardBodyContainer {
+        padding: 0.5rem 1rem 1rem 1rem;
+    }
+
+    .crossedText {
+        text-decoration: line-through;
+    }
+
+    .title {
+        font-size: large;
+        font-weight: bolder;
+        margin-bottom: 0.5rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    /* Footer */
+    .footerContainer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        padding: 2rem;
+        background-color: var(--colorC);
+        color: white;
+    }
     
     /* HTML elements */
     p {
