@@ -120,6 +120,37 @@
         background-color: var(--colorC);
         color: white;
     }
+
+    /* Landing */
+    .landingContainer {
+        display: grid;
+        grid-template-columns: 9fr 1.75fr;
+        padding-left: 3rem;
+        background-color: var(--colorB);
+        border-radius: 10px;
+        justify-content: center;
+        margin: 1rem;
+        height: 68vh;
+        font-size: xx-large;
+        text-align: center;
+        color: white;
+        font-weight: bolder;
+        font-size: 1rem;
+    }
+
+    .landingImage {
+        height: 100%;
+        width: 100%;
+        display: none;
+    }
+
+    .landingText {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
     
     /* HTML elements */
     p {
