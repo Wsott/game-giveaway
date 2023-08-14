@@ -3,6 +3,7 @@ import style from "../../css/Components.module.css";
 import Card from "../card/Card";
 import { useQuery } from "react-query";
 import { useParams } from "react-router-dom";
+import Loading from "../loading/Loading";
 
 interface jsonData {
     "id": number;
@@ -49,7 +50,7 @@ export default function Grid () {
         <div className={style.gridContainer}>
             {
                 (isLoading)?
-                    null
+                    <Loading/>
                 :
                     data.map((actual: jsonData, key: number) => {
                         return (
