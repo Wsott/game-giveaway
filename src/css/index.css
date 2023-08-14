@@ -1,9 +1,9 @@
 :root {
   font-family: 'Quicksand', sans-serif;
-  --colorA: #35155D;
-  --colorB: #512B81;
-  --colorC: #4477CE;
-  --colorD: #8CABFF;
+  --colorA: #635985;
+  --colorB: #443C68;
+  --colorC: #393053;
+  --colorD: #18122B;
 
   background-color: var(--colorA);
 }

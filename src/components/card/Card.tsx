@@ -25,10 +25,11 @@ export default function Card() {
                 <img className={style.cardImage} src={mockData.thumbnail} alt={mockData.title} />
             </div>
             <div className={style.cardBodyContainer}>
-                <b>{mockData.title}</b>
-                <p><b>Value:</b> <span className={style.crossedText}>{mockData.worth}</span></p>
-                <p><b>End date:</b> {mockData.end_date.split(" ")[0]}</p>
-                <p><i>{mockData.platforms}</i></p>
+                <p className={style.title}>{mockData.title}</p>
+                <p><b>Tipo:</b> {(mockData.type == "Game")? "Juego": mockData.type}</p>
+                <p><b>Vale:</b> <span className={style.crossedText}>{mockData.worth}</span></p>
+                <p><b>Disponible hasta:</b> {mockData.end_date.split(" ")[0]}</p>
+                <p><b>Tags:</b> <i>{mockData.platforms}</i></p>
             </div>
         </div>
     );
