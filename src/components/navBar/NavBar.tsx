@@ -1,9 +1,16 @@
 import { Link } from "react-router-dom";
 import style from "../../css/Components.module.css";
+import { useState } from "react";
 
 export default function NavBar () {
+    const [menuOpen, setMenuOpen] = useState(false);
+    
     return (
         <div className={style.navbarContainer}>
+            <div className={style.mobileMenuIcon} onClick={() => setMenuOpen(!menuOpen)}>
+                ☰
+            </div>
+            <div className={`${style.menuItems} ${menuOpen ? style.open : ""}`}>
             <Link to={"/"}>Inicio</Link>
             <Link to={"/giveaway/pc"}>PC</Link>
             <Link to={"/giveaway/steam"}>Steam</Link>
@@ -16,6 +23,7 @@ export default function NavBar () {
             <Link to={"/giveaway/android"}>Android</Link>
             <Link to={"/giveaway/ios"}>iOS</Link>
             <Link to={"/giveaway/drm-free"}>DRM Free</Link>
+            </div>
         </div>
     );
 }
