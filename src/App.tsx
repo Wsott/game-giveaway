@@ -4,14 +4,26 @@ import viteLogo from '/vite.svg'
 import './css/App.css'
 import Card from './components/card/Card'
 import Grid from './components/grid/Grid'
+import NavBar from './components/navBar/NavBar'
+import { QueryClient, QueryClientProvider } from 'react-query'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+
+const client = new QueryClient();
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <Grid/>
-    </>
+
+    <QueryClientProvider client={client}>
+      <BrowserRouter>
+      <NavBar/>
+      <Routes>
+        <Route path='/'/>
+        <Route path='/giveaway/:platform' element={<Grid/>}/>
+        <Route path='*'/>
+      </Routes>
+      </BrowserRouter>
+    </QueryClientProvider>
+
   )
 }
 

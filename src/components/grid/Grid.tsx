@@ -2,6 +2,8 @@ import axios from "axios";
 import style from "../../css/Components.module.css";
 import Card, { cardData } from "../card/Card";
 import { useQuery } from "react-query";
+import { useParams } from "react-router-dom";
+import { useEffect } from "react";
 
 interface jsonData {
     "id": number;
@@ -41,7 +43,8 @@ async function fetchData (plataforma: string) {
 }
 
 export default function Grid () {
-    const {data, isLoading, error} = useQuery("data", () => fetchData("epic-games-store"));
+    const {platform}: any = useParams();
+    let {data, isLoading, error} = useQuery(['data', platform], () => fetchData(platform));
 
     return (
         <div className={style.gridContainer}>
@@ -49,9 +52,10 @@ export default function Grid () {
                 (isLoading)?
                     null
                 :
-                    data.map((actual: jsonData) => {
+                    data.map((actual: jsonData, key: number) => {
                         return (
                             <Card 
+                                key={key}
                                 image={actual.thumbnail} 
                                 title={actual.title} 
                                 type={actual.type} 
