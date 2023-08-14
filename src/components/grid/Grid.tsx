@@ -44,7 +44,7 @@ async function fetchData (plataforma: string) {
 
 export default function Grid () {
     const {platform}: any = useParams();
-    let {data, isLoading, error} = useQuery(['data', platform], () => fetchData(platform));
+    let {data, isLoading} = useQuery(['data', platform], () => fetchData(platform));
 
     return (
         <div className={style.gridContainer}>
