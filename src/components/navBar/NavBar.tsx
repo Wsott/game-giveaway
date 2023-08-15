@@ -33,33 +33,33 @@ export default function NavBar () {
                         </div>
                         <div className={`${style.menuItems} ${menuOpen ? style.open : ""}`}>
                             <Link to={"/"}>Inicio</Link>
-                            <Link to={"/giveaway/pc"}>PC</Link>
-                            <Link to={"/giveaway/steam"}>Steam</Link>
-                            <Link to={"/giveaway/epic-games-store"}>Epic Games</Link>
-                            <Link to={"/giveaway/itchio"}>itch.io</Link>
-                            <Link to={"/giveaway/gog"}>GOG</Link>
-                            <Link to={"/giveaway/xbox-one"}>Xbox One</Link>
-                            <Link to={"/giveaway/ps4"}>PS4</Link>
-                            <Link to={"/giveaway/switch"}>Nintendo</Link>
-                            <Link to={"/giveaway/android"}>Android</Link>
-                            <Link to={"/giveaway/ios"}>iOS</Link>
-                            <Link to={"/giveaway/drm-free"}>DRM Free</Link>
+                            <Link to={"/giveaways/pc"}>PC</Link>
+                            <Link to={"/giveaways/steam"}>Steam</Link>
+                            <Link to={"/giveaways/epic-games-store"}>Epic Games</Link>
+                            <Link to={"/giveaways/itchio"}>itch.io</Link>
+                            <Link to={"/giveaways/gog"}>GOG</Link>
+                            <Link to={"/giveaways/xbox-one"}>Xbox One</Link>
+                            <Link to={"/giveaways/ps4"}>PS4</Link>
+                            <Link to={"/giveaways/switch"}>Nintendo</Link>
+                            <Link to={"/giveaways/android"}>Android</Link>
+                            <Link to={"/giveaways/ios"}>iOS</Link>
+                            <Link to={"/giveaways/drm-free"}>DRM Free</Link>
                         </div>
                     </>
                 :
                     <>
                         <Link to={"/"}>Inicio</Link>
-                        <Link to={"/giveaway/pc"}>PC</Link>
-                        <Link to={"/giveaway/steam"}>Steam</Link>
-                        <Link to={"/giveaway/epic-games-store"}>Epic Games</Link>
-                        <Link to={"/giveaway/itchio"}>itch.io</Link>
-                        <Link to={"/giveaway/gog"}>GOG</Link>
-                        <Link to={"/giveaway/xbox-one"}>Xbox One</Link>
-                        <Link to={"/giveaway/ps4"}>PS4</Link>
-                        <Link to={"/giveaway/switch"}>Nintendo</Link>
-                        <Link to={"/giveaway/android"}>Android</Link>
-                        <Link to={"/giveaway/ios"}>iOS</Link>
-                        <Link to={"/giveaway/drm-free"}>DRM Free</Link>
+                        <Link to={"/giveaways/pc"}>PC</Link>
+                        <Link to={"/giveaways/steam"}>Steam</Link>
+                        <Link to={"/giveaways/epic-games-store"}>Epic Games</Link>
+                        <Link to={"/giveaways/itchio"}>itch.io</Link>
+                        <Link to={"/giveaways/gog"}>GOG</Link>
+                        <Link to={"/giveaways/xbox-one"}>Xbox One</Link>
+                        <Link to={"/giveaways/ps4"}>PS4</Link>
+                        <Link to={"/giveaways/switch"}>Nintendo</Link>
+                        <Link to={"/giveaways/android"}>Android</Link>
+                        <Link to={"/giveaways/ios"}>iOS</Link>
+                        <Link to={"/giveaways/drm-free"}>DRM Free</Link>
                     </>
             }
         </div>

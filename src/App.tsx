@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from 'react-query'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Footer from './components/footer/Footer'
 import Landing from './components/landing/Landing'
+import GameInfo from './components/gameinfo/GameInfo'
 
 const client = new QueryClient();
 
@@ -16,7 +17,8 @@ function App() {
       <NavBar/>
       <Routes>
         <Route path='/' element={<Landing/>}/>
-        <Route path='/giveaway/:platform' element={<Grid/>}/>
+        <Route path='/giveaways/:platform' element={<Grid/>}/>
+        <Route path='/giveaway/:id' element={<GameInfo/>}/>
         <Route path='*'/>
       </Routes>
       <Footer/>

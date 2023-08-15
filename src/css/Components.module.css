@@ -151,6 +151,97 @@
         justify-content: center;
         width: 100%;
     }
+
+    /* GameInfo */
+    .gameInfoContainer {
+        background-color: var(--colorB);
+        margin: 1rem;
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: 1fr;
+        border-radius: 10px;
+        min-height: 70vh;
+        color: white;
+    }
+
+    .mainContent {
+        /* background-color: yellow; */
+    }
+
+    .headerContainer {
+        padding: 1rem;
+        /* background-color: yellowgreen; */
+        display: flex;
+        flex-direction: column;
+        column-gap: 1rem;
+    }
+
+    .bigTitle {
+        font-size: x-large;
+        font-weight: bolder;
+        margin: 1rem 0;
+    }
+
+    .headerText {
+        margin: 0.25rem 0;
+    }
+
+    .headerImage {
+        border-radius: 10px;
+    }
+
+    .headerInfoContainer {}
+
+    .gameInfoDescription {
+        padding: 1rem;
+        font-size: x-large;
+    }
+
+    .gameInfoText {}
+
+    .importantText {
+        font-weight: bolder;
+        font-size: larger;
+        margin-bottom: 0.5rem;
+    }
+
+    .gameClaimContainer {
+        display: flex;
+        /* background-color: aliceblue; */
+        flex-direction: column;
+    }
+
+    .claimButton {}
+
+    .claimButton button {
+        background-color: var(--colorA);
+        min-height: 2rem;
+        font-weight: bolder;
+        color: white;
+        border: 1px solid black;
+        box-shadow: 0px 0px 0px white;
+        border-radius: 10px;
+        transition: box-shadow 0.2s ease-in-out;
+        font-size: large;
+        padding: 0.5rem;
+        width: 100%;
+    }
+
+    .claimButton button:hover {
+        background-color: var(--colorA);
+        min-height: 2rem;
+        font-weight: bolder;
+        color: white;
+        border: 1px solid black;
+        box-shadow: 0px 0px 15px white;
+        border-radius: 10px;
+        cursor: pointer;
+        animation: shake 1.5s infinite;
+    }
+
+    .claimButton button:active {
+        box-shadow: 0px 0px 5px white;
+    }
     
     /* HTML elements */
     p {
@@ -159,7 +250,7 @@
 
     a {
         text-decoration: none;
-        font-weight: bolder;
+        /* font-weight: bolder; */
         font-size: 1.1rem;
         color: white;
         margin: 0.5rem;
@@ -167,6 +258,11 @@
 
     a:visited {
         color: inherit;
+    }
+
+    .footerContainer a,
+    .navbarContainer a {
+        font-weight: bolder;
     }
 }
 
@@ -182,6 +278,7 @@
         width: 100%;
         transition: box-shadow 0.2s ease-in-out;
         color: white;
+        height: 100%;
     }
 
     .cardContainer:hover {
@@ -306,6 +403,7 @@
         justify-content: center;
         grid-column: 1 / -1;
         flex-direction: column;
+        height: 75vh;
     }
 
     .loader {
@@ -332,6 +430,105 @@
         }
     }
 
+    /* GameInfo */
+    .gameInfoContainer {
+        background-color: var(--colorB);
+        margin: 1rem 7rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        border-radius: 10px;
+        min-height: 70vh;
+        color: white;
+    }
+
+    .mainContent {
+        /* background-color: yellow; */
+    }
+
+    .headerContainer {
+        padding: 1rem;
+        /* background-color: yellowgreen; */
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        column-gap: 1rem;
+    }
+
+    .bigTitle {
+        font-size: x-large;
+        font-weight: bolder;
+        margin: 1rem 0;
+    }
+
+    .headerText {
+        margin: 0.25rem 0;
+    }
+
+    .headerImage {
+        border-radius: 10px;
+    }
+
+    .headerInfoContainer {
+        
+    }
+
+    .gameInfoDescription {
+        padding: 1rem;
+        font-size: x-large;
+    }
+
+    .gameInfoText {
+
+    }
+
+    .importantText {
+        font-weight: bolder;
+        font-size: larger;
+        margin-bottom: 0.5rem;
+    }
+
+    .gameClaimContainer {
+        display: flex;
+        /* background-color: aliceblue; */
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .claimButton {
+        
+        
+    }
+
+    .claimButton button {
+        background-color: var(--colorA);
+        min-height: 2rem;
+        font-weight: bolder;
+        color: white;
+        border: 1px solid black;
+        box-shadow: 0px 0px 0px white;
+        border-radius: 10px;
+        transition: box-shadow 0.2s ease-in-out;
+        font-size: large;
+        padding: 0.5rem;
+    }
+
+    .claimButton button:hover {
+        background-color: var(--colorA);
+        min-height: 2rem;
+        font-weight: bolder;
+        color: white;
+        border: 1px solid black;
+        box-shadow: 0px 0px 15px white;
+        border-radius: 10px;
+        cursor: pointer;
+        animation: shake 1.5s infinite;
+    }
+
+    .claimButton button:active {
+        box-shadow: 0px 0px 5px white;
+    }
+
     /* HTML elements */
     p {
         margin: 0;
@@ -339,12 +536,17 @@
 
     a {
         text-decoration: none;
-        font-weight: bolder;
+        /* font-weight: bolder; */
         font-size: 1.1rem;
         color: white;
     }
 
     a:visited {
         color: inherit;
+    }
+
+    .footerContainer a,
+    .navbarContainer a {
+        font-weight: bolder;
     }
 }
